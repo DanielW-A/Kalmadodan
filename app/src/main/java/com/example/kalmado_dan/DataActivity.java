@@ -104,7 +104,7 @@ public class DataActivity extends AppCompatActivity {
         ArrayList<String> years = new ArrayList<String>();
         years.add(Integer.toString(date[0]));
 
-        for (int i = 0; i < date.length; i++){
+        for (int i = 0; i < years.size(); i++){
             if(!years.contains(vals[i][Year])){
                 years.add(vals[i][Year]);
             }

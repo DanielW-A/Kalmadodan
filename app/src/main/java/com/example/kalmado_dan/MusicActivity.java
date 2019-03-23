@@ -1,10 +1,5 @@
 package com.example.kalmado_dan;
 
-//commented out sections don't work
-// seeker does nothing
-// buttons are un used
-// crash if volume set to max.
-
 import android.app.Activity;
 import android.content.Intent;
 import android.media.AudioManager;
@@ -30,7 +25,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-public class MeditateActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class MusicActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     static final int REQUEST_CODE = 1;
     ArrayAdapter<String> songs;
@@ -47,9 +42,9 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
     protected void onCreate(final Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meditate);
+        setContentView(R.layout.activity_music);
 
-        musicPlay = MediaPlayer.create(MeditateActivity.this,R.raw.emotionalpianosong);
+        musicPlay = MediaPlayer.create(MusicActivity.this,R.raw.emotionalpianosong);
         musicList = findViewById(R.id.spinner);
         songsList.add("Default");
         songs = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, songsList);
@@ -66,12 +61,12 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
                     stopped = true;
                 }
                 close = true;
-                Intent i5 = new Intent(MeditateActivity.this, MainActivity.class);
-                startActivity(i5);
+                Intent i4 = new Intent(MusicActivity.this, MainActivity.class);
+                startActivity(i4);
             }
         });
 
-        Button relax = findViewById(R.id.SettingsButton);
+        Button relax = findViewById(R.id.BackButton);
         relax.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (musicPlay.isPlaying()) {
@@ -83,14 +78,6 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
             }
         });
 
-        Button exit = findViewById(R.id.BackButton);
-        exit.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                stopped = true;
-                close = true;
-                System.exit(0);
-            }
-        });
 
         ImageView next = findViewById(R.id.imageView5);
         next.setOnClickListener(new View.OnClickListener() {
@@ -149,16 +136,16 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             public void onClick(View v) {
                 if (!musicPlay.isPlaying() && currentChoice == null) {
-                //    LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-                  //  View popupView = inflater.inflate(R.layout.popup_window, null);
+                    //LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+                    //View popupView = inflater.inflate(R.layout.popup_window, null);
                     //final PopupWindow popupWindow = new PopupWindow(popupView, 100, 100, true);
-                    //popupView.setOnTouchListener(new View.OnTouchListener() {
-                      //  @Override
+                   // popupView.setOnTouchListener(new View.OnTouchListener() {
+                        //@Override
                         //public boolean onTouch(View v, MotionEvent event) {
-                          //  popupWindow.dismiss();
+                            //popupWindow.dismiss();
                             //return true;
-                       // }
-                    //});
+                        //}
+                   // });
                 }
                 else if (!musicPlay.isPlaying()) {
                     try {
@@ -185,7 +172,7 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
             }
         });
 
-        ImageView download = findViewById(R.id.imageView2);
+        Button download = findViewById(R.id.DownloadImageButton);
         download.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent mediaIntent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -194,7 +181,7 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
             }
         });
 
-        progress = findViewById(R.id.seekBar);
+        progress = findViewById(R.id.seekBar2);
         progress.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             public void onProgressChanged(SeekBar seekBar, int level, boolean fromUser) {}
 
