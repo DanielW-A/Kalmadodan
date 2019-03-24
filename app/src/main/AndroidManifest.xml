@@ -14,6 +14,8 @@
         <activity android:name=".BreatheActivity"></activity>
         <activity android:name=".TableDataActivity" />
         <activity android:name=".DataActivity" />
+        <activity android:name=".CustomPinActivity"/>
+
         <activity
             android:name=".RelaxActivity"
             android:label="@string/title_activity_relax"
