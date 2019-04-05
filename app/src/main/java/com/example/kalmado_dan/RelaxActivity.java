@@ -43,8 +43,8 @@ public class RelaxActivity extends AppCompatActivity {
         Button musicButton = findViewById(R.id.MusicButton);
         musicButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //Intent k2 = new Intent(Calm.this, Music.class);
-                //startActivity(k2);
+                Intent i = new Intent(RelaxActivity.this, MusicActivity.class);
+                startActivity(i);
             }
         });
 
