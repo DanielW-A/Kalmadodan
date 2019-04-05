@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
-import com.github.omadahealth.lollipin.lib.PinCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.github.omadahealth.lollipin.lib.PinCompatActivity;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -58,6 +58,7 @@ public class DataActivity extends PinCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DataActivity.this,TableDataActivity.class);
                 startActivity(intent);
+                refresh();
             }
         });
 
@@ -105,7 +106,7 @@ public class DataActivity extends PinCompatActivity {
         ArrayList<String> years = new ArrayList<String>();
         years.add(Integer.toString(date[0]));
 
-        for (int i = 0; i < date.length; i++){
+        for (int i = 0; i < years.size(); i++){
             if(!years.contains(vals[i][Year])){
                 years.add(vals[i][Year]);
             }
@@ -159,11 +160,11 @@ public class DataActivity extends PinCompatActivity {
         if(M.getSelectedItemPosition() == 0){
             DM = true;
         }
-        //if(DM){
+        if(DM){
             month(M.getSelectedItemPosition(), Integer.parseInt(String.valueOf(Ye.getSelectedItem())));
-        //}else{
+        }else{
             //year(Ye.getSelectedItemPosition());
-        //}
+        }
     }
 
     private void year(int selectedItemPosition) {
