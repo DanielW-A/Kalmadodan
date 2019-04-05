@@ -3,6 +3,7 @@
     package="com.example.kalmado_dan">
 
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BreatheActivity"></activity>
+        <activity android:name=".MusicActivity"></activity>
+        <activity android:name=".BreatheActivity" />
         <activity android:name=".TableDataActivity" />
         <activity android:name=".DataActivity" />
         <activity android:name=".CustomPinActivity"/>
-
         <activity
             android:name=".RelaxActivity"
             android:label="@string/title_activity_relax"
