@@ -11,6 +11,7 @@
         android:title="@string/pref_header_notifications" />
     <header
         android:fragment="com.example.kalmado_dan.SettingsActivity$PrivacyPreferenceFragment"
-        android:title="Set Pin"/>
+        android:icon="@drawable/ic_fingerprint_black_24dp"
+        android:title="Privacy"/>
 
 </preference-headers>
