@@ -3,6 +3,8 @@ package com.example.kalmado_dan;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
+import com.github.omadahealth.lollipin.lib.PinCompatActivity;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -12,7 +14,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Data extends AppCompatActivity {
+public class Data extends PinCompatActivity {
 
     File path;
     File fileAdapter;
