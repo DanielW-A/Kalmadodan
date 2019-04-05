@@ -12,9 +12,11 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.github.omadahealth.lollipin.lib.PinCompatActivity;
+
 import java.util.ArrayList;
 
-public class TableDataActivity extends AppCompatActivity {
+public class TableDataActivity extends PinCompatActivity {
 
     private Data data;
     private String str;
