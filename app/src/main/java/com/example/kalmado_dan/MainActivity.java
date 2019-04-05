@@ -1,5 +1,9 @@
 package com.example.kalmado_dan;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -52,7 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 dat();
             }
         });
+
+
     }
+
 
     public void test(){
         Intent intent = new Intent(this,TestActivity.class);
