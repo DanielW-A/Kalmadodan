@@ -82,15 +82,15 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
                 finish();
             }
         });
-
-        Button exit = findViewById(R.id.BackButton);
-        exit.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                stopped = true;
-                close = true;
-                System.exit(0);
-            }
-        });
+//
+//        Button exit = findViewById(R.id.BackButton);
+//        exit.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                stopped = true;
+//                close = true;
+//                System.exit(0);
+//            }
+//        });
 
         ImageView next = findViewById(R.id.imageView5);
         next.setOnClickListener(new View.OnClickListener() {
@@ -158,6 +158,7 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
                     //  popupWindow.dismiss();
                     //return true;
                     // }
+
                     //});
                 }
                 else if (!musicPlay.isPlaying()) {

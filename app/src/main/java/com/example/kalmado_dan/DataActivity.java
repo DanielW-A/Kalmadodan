@@ -58,7 +58,8 @@ public class DataActivity extends PinCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DataActivity.this,TableDataActivity.class);
                 startActivity(intent);
-                refresh();
+
+                finish();
             }
         });
 
@@ -160,7 +161,8 @@ public class DataActivity extends PinCompatActivity {
         if(M.getSelectedItemPosition() == 0){
             DM = true;
         }
-        if(DM){
+
+        if(!DM){
             month(M.getSelectedItemPosition(), Integer.parseInt(String.valueOf(Ye.getSelectedItem())));
         }else{
             //year(Ye.getSelectedItemPosition());

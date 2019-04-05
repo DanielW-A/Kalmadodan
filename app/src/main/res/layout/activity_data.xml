@@ -20,7 +20,6 @@
         android:padding="3dp"
         />
 
-
     <Button
         android:id="@+id/SubmitButton"
         android:layout_width="135dp"

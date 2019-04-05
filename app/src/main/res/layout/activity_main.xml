@@ -22,17 +22,6 @@
         android:background="@drawable/circle_button"
         android:drawableTop="@drawable/ic_settings_black_24dp" />
 
-    <Button
-        android:id="@+id/exit"
-        android:layout_width="76dp"
-        android:layout_height="83dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/circle_button"
-        android:drawableTop="@drawable/ic_exit_to_app_black_24dp"
-        android:padding="3dp" />
-
     <TextView
         android:id="@+id/Name"
         android:layout_width="wrap_content"
