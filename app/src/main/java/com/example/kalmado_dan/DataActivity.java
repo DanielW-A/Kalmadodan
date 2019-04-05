@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.github.omadahealth.lollipin.lib.PinCompatActivity;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -20,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class DataActivity extends AppCompatActivity {
+public class DataActivity extends PinCompatActivity {
 
     private Button Home;
     private Button Data;
@@ -57,8 +58,8 @@ public class DataActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DataActivity.this,TableDataActivity.class);
                 startActivity(intent);
-                finish();
 
+                finish();
             }
         });
 
@@ -160,6 +161,7 @@ public class DataActivity extends AppCompatActivity {
         if(M.getSelectedItemPosition() == 0){
             DM = true;
         }
+
         if(!DM){
             month(M.getSelectedItemPosition(), Integer.parseInt(String.valueOf(Ye.getSelectedItem())));
         }else{

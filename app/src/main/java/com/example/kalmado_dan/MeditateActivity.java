@@ -149,15 +149,16 @@ public class MeditateActivity extends AppCompatActivity implements AdapterView.O
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             public void onClick(View v) {
                 if (!musicPlay.isPlaying() && currentChoice == null) {
-                //    LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-                  //  View popupView = inflater.inflate(R.layout.popup_window, null);
+                    //    LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+                    //  View popupView = inflater.inflate(R.layout.popup_window, null);
                     //final PopupWindow popupWindow = new PopupWindow(popupView, 100, 100, true);
                     //popupView.setOnTouchListener(new View.OnTouchListener() {
-                      //  @Override
-                        //public boolean onTouch(View v, MotionEvent event) {
-                          //  popupWindow.dismiss();
-                            //return true;
-                       // }
+                    //  @Override
+                    //public boolean onTouch(View v, MotionEvent event) {
+                    //  popupWindow.dismiss();
+                    //return true;
+                    // }
+
                     //});
                 }
                 else if (!musicPlay.isPlaying()) {

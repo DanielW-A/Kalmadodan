@@ -139,13 +139,14 @@ public class MusicActivity extends AppCompatActivity implements AdapterView.OnIt
                     //LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
                     //View popupView = inflater.inflate(R.layout.popup_window, null);
                     //final PopupWindow popupWindow = new PopupWindow(popupView, 100, 100, true);
-                   // popupView.setOnTouchListener(new View.OnTouchListener() {
-                        //@Override
-                        //public boolean onTouch(View v, MotionEvent event) {
-                            //popupWindow.dismiss();
-                            //return true;
-                        //}
-                   // });
+                    // popupView.setOnTouchListener(new View.OnTouchListener() {
+                    //@Override
+                    //public boolean onTouch(View v, MotionEvent event) {
+                    //popupWindow.dismiss();
+                    //return true;
+                    //}
+                    // });
+
                 }
                 else if (!musicPlay.isPlaying()) {
                     try {
@@ -180,6 +181,7 @@ public class MusicActivity extends AppCompatActivity implements AdapterView.OnIt
                 startActivityForResult(mediaIntent, REQUEST_CODE);
             }
         });
+
 
         progress = findViewById(R.id.seekBar);
         progress.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -251,3 +253,4 @@ public class MusicActivity extends AppCompatActivity implements AdapterView.OnIt
         return returnVal;
     }
 }
+

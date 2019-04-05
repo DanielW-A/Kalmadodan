@@ -62,7 +62,7 @@
         android:layout_below="@+id/TitleText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="Question on anxiety"
+        android:text="How nervous do you feel?"
         android:textSize="18sp"
         android:visibility="visible" />
 
@@ -73,7 +73,7 @@
         android:layout_below="@+id/seekBar1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Question on anxiety"
+        android:text="How afraid do you feel?"
         android:textSize="18sp"
         android:visibility="visible" />
 
@@ -84,7 +84,7 @@
         android:layout_below="@+id/seekBar2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Question on anxiety"
+        android:text="How lightheaded do you feel?"
         android:textSize="18sp"
         android:visibility="visible" />
 
@@ -95,7 +95,7 @@
         android:layout_below="@+id/seekBar3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Question on anxiety"
+        android:text="Do you feel numbness or any tingling?"
         android:textSize="18sp"
         android:visibility="visible" />
 
@@ -191,25 +191,21 @@
         android:id="@+id/textView"
         android:layout_width="109dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar4"
-        android:layout_alignStart="@+id/imageView2"
         android:layout_alignLeft="@+id/imageView2"
-        android:layout_marginStart="40dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/seekBar4"
         android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="25dp"
         android:clickable="true"
-        android:text="Manualy enter date?"/>
+        android:text="Manually enter date?" />
 
     <TextView
         android:id="@+id/textViewdec"
         android:layout_width="109dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar4"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_below="@+id/textview4"
         android:clickable="true"
         android:text="Add a description" />
 
