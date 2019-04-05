@@ -9,12 +9,6 @@
         android:singleLine="true"
         android:title="Display name" />
     <SwitchPreference
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:defaultValue="false"
-        android:key="activate_pin"
-        android:title="Use pin to access data" />
-    <SwitchPreference
         android:defaultValue="false"
         android:key="save_input_data"
         android:title="Save input data" />
