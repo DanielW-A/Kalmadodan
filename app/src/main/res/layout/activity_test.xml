@@ -20,17 +20,6 @@
         android:padding="3dp"
         />
 
-    <Button
-        android:id="@+id/exit"
-        android:layout_width="76dp"
-        android:layout_height="83dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/circle_button"
-        android:drawableEnd="@drawable/ic_exit_to_app_black_24dp"
-        android:drawableRight="@drawable/ic_exit_to_app_black_24dp"
-        android:padding="3dp" />
 
     <ImageView
         android:id="@+id/imageView2"

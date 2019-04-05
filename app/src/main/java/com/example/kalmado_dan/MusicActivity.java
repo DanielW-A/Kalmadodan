@@ -66,17 +66,17 @@ public class MusicActivity extends AppCompatActivity implements AdapterView.OnIt
             }
         });
 
-        Button relax = findViewById(R.id.BackButton);
-        relax.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                if (musicPlay.isPlaying()) {
-                    musicPlay.stop();
-                    stopped = true;
-                }
-                close = true;
-                finish();
-            }
-        });
+//        Button relax = findViewById(R.id.BackButton);
+//        relax.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                if (musicPlay.isPlaying()) {
+//                    musicPlay.stop();
+//                    stopped = true;
+//                }
+//                close = true;
+//                finish();
+//            }
+//        });
 
 
         ImageView next = findViewById(R.id.imageView5);
@@ -181,7 +181,7 @@ public class MusicActivity extends AppCompatActivity implements AdapterView.OnIt
             }
         });
 
-        progress = findViewById(R.id.seekBar2);
+        progress = findViewById(R.id.seekBar);
         progress.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             public void onProgressChanged(SeekBar seekBar, int level, boolean fromUser) {}
 
